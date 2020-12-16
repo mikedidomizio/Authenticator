@@ -73,6 +73,7 @@ postCompile () {
     cp manifest-$1.json $1/manifest.json
     if [[ $1 = "chrome" ]]; then
         cp schema-chrome.json $1/schema.json
+        cp hot-reload.js $1/hot-reload.js
     fi
 }
 
