@@ -15,4 +15,15 @@ npm install
 npm run [chrome, firefox]
 ```
 
+## Development (Chrome)
+
+``` bash
+# install development dependencies
+npm install 
+# compiles the chrome extension to the `./chrome` directory and watches for file changes
+npm run dev:chrome
+```
+
+Load the unpacked extension and when files in `./src` are changed, the extension will reload
+
 Note that Windows users should download a tool like [Git Bash](https://git-scm.com/download/win) or [Cygwin](http://cygwin.com/) to build.

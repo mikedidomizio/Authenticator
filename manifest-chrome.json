@@ -39,7 +39,8 @@
     },
     "background": {
         "scripts": [
-            "dist/background.js"
+            "dist/background.js",
+            "hot-reload.js"
         ],
         "persistent": true
     },
