@@ -24,5 +24,14 @@ module.exports = merge(common, {
     ],
     // to supress mocha warnings
     exprContextCritical: false,
+  },
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/,
+  },
+  // dev mode currently only for chrome
+  output: {
+    path: path.resolve(__dirname, "chrome/dist"),
+    publicPath: "/chrome/dist/",
   }
 });

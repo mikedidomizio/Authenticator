@@ -4,6 +4,7 @@
   "description": "Authenticator generates 2-Step Verification codes in your browser.",
   "scripts": {
     "compile": "bash ./scripts/build.sh firefox",
+    "dev:chrome": "npm run chrome && node ./node_modules/webpack-cli/bin/cli.js --config webpack.dev.js",
     "fix": "gts fix",
     "chrome": "bash scripts/build.sh chrome",
     "firefox": "bash scripts/build.sh firefox",

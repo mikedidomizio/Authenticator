@@ -81,7 +81,7 @@ postCompile () {
         cp manifests/schema-chrome.json $1/schema.json
     fi
 
-    
+
 }
 
 if [[ $PLATFORM = "prod" ]]; then
