@@ -5,7 +5,8 @@ const common = require('./webpack.config.js');
 module.exports = merge(common, {
   mode: "development",
   entry: {
-    test: "./src/test.ts"
+    test: "./src/test.ts",
+    hotReload: "./src/hot-reload.ts",
   },
   module: {
     rules: [

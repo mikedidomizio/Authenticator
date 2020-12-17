@@ -16,7 +16,7 @@ module.exports = {
     "amd": true,
     "node": true,
     "es6": true,
-    "webextensions": true
+    "webextensions": true,
   },
   rules: {
     "@typescript-eslint/no-use-before-define": "off",
