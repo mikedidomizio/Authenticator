@@ -80,8 +80,6 @@ postCompile () {
     if [[ $1 = "chrome" ]]; then
         cp manifests/schema-chrome.json $1/schema.json
     fi
-
-
 }
 
 if [[ $PLATFORM = "prod" ]]; then

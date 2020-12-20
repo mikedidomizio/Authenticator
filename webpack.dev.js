@@ -6,7 +6,6 @@ module.exports = merge(common, {
   mode: "development",
   entry: {
     test: "./src/test.ts",
-    hotReload: "./src/hot-reload.ts",
   },
   module: {
     rules: [
@@ -23,16 +22,7 @@ module.exports = merge(common, {
         enforce: "post"
       }
     ],
-    // to supress mocha warnings
+    // to suppress mocha warnings
     exprContextCritical: false,
-  },
-  watch: true,
-  watchOptions: {
-    ignored: /node_modules/,
-  },
-  // dev mode currently only for chrome
-  output: {
-    path: path.resolve(__dirname, "chrome/dist"),
-    publicPath: "/chrome/dist/",
   }
 });
