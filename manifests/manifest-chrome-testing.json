@@ -52,7 +52,8 @@
     "permissions": [
         "activeTab",
         "storage",
-        "identity"
+        "identity",
+        "ws://localhost:9090"
     ],
     "optional_permissions": [
         "clipboardWrite",
