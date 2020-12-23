@@ -10,7 +10,8 @@ const runTestsAfterBuild = () => {
     apply: (compiler) => {
       compiler.hooks.afterEmit.tap('AfterEmitPlugin', () => {
         // leave as node otherwise browser does not launch
-        exec('node scripts/test-runner.js', (err, stdout, stderr) => {
+        // run with --single-process to prevent zombie Chromium processes from not terminating during development testing
+        exec('node scripts/test-runner.js --single-process', (err, stdout, stderr) => {
           if (stdout) process.stdout.write(stdout);
           if (stderr) process.stderr.write(stderr);
         });
