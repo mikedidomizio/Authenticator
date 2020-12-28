@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+const coverInterrop = require("../../coverInterrop.js");
+
 import "mocha";
 import * as chai from "chai";
 import { assert } from "chai";
