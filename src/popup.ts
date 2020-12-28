@@ -1,3 +1,5 @@
+/* istanbul ignore file */
+
 // Vue
 import Vue from "vue";
 import Vuex from "vuex";
